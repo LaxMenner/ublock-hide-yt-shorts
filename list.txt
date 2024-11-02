@@ -1,4 +1,4 @@
-! Title: Hide YouTube Shorts
+! Title: Hide YouTube Shorts u Trends u Gaming
 ! Description: Hide all traces of YouTube shorts videos on YouTube
 ! Version: 1.10.0
 ! Last modified: 2024-08-31 19:24
@@ -71,18 +71,18 @@ m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-at
 m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
 
 ! Hide Trends button in sidebar
-www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Trending$/i))
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Trends$/i))
 ! Hide Gaming button in sidebar
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Gaming$/i))
 
 ! Tablet resolution (if applicable)
-www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Trending$/i))
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Trends$/i))
 www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Gaming$/i))
 
 !!! MOBILE !!!
 
 ! Hide Trends button in sidebar
-m.youtube.com##ytm-guide-section-renderer:has(.guide-item:has-text(/^Trending$/i))
+m.youtube.com##ytm-guide-section-renderer:has(.guide-item:has-text(/^Trends$/i))
 ! Hide Gaming button in sidebar
 m.youtube.com##ytm-guide-section-renderer:has(.guide-item:has-text(/^Gaming$/i))
 
