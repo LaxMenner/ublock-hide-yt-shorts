@@ -70,3 +70,20 @@ m.youtube.com##ytm-reel-shelf-renderer:has(.reel-shelf-title-wrapper .yt-core-at
 ! Hide shorts category on homepage
 m.youtube.com##ytm-chip-cloud-chip-renderer:has(.yt-core-attributed-string:has-text(/^Shorts$/i))
 
+! Hide Trends button in sidebar
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Trending$/i))
+! Hide Gaming button in sidebar
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Gaming$/i))
+
+! Tablet resolution (if applicable)
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Trending$/i))
+www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Gaming$/i))
+
+!!! MOBILE !!!
+
+! Hide Trends button in sidebar
+m.youtube.com##ytm-guide-section-renderer:has(.guide-item:has-text(/^Trending$/i))
+! Hide Gaming button in sidebar
+m.youtube.com##ytm-guide-section-renderer:has(.guide-item:has-text(/^Gaming$/i))
+
+
