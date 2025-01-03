@@ -69,3 +69,18 @@ www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entr
 ! Hide "Gaming" button if aria-pressed="false" on the guide button
 www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(yt-formatted-string:has-text(/^Gaming$/i))
 
+! Hide "Startseite" button if aria-pressed="false" on the guide button
+www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(yt-formatted-string:has-text(/^Startseite$/i))
+
+! Hide "Startseite" sections except on history page
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-rich-section-renderer:has(#title:has-text(/(^| )Startseite( |$)/i))
+www.youtube.com##:matches-path(/^(?!\/feed\/history).*$/)ytd-reel-shelf-renderer:has(.ytd-reel-shelf-renderer:has-text(/(^| )Startseite( |$)/i))
+
+! Hide "Startseite" tab on channel pages
+! Old style
+www.youtube.com##tp-yt-paper-tab:has(.tp-yt-paper-tab:has-text(Startseite))
+! New style (2023-10)
+www.youtube.com##yt-tab-shape:has-text(/^Startseite$/)
+
+! Hide "Startseite" category on homepage and search pages
+www.youtube.com##yt-chip-cloud-chip-renderer:has(yt-formatted-string:has-text(/^Startseite$/i))
