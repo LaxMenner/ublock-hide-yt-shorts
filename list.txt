@@ -1,6 +1,6 @@
 ! Title: Hide YouTube Shorts u Trends u Gaming
 ! Description: Hide all traces of YouTube shorts videos on YouTube
-! Version: 1.10.1
+! Version: 1.10.2
 ! Last modified: 2025-01-03
 ! Expires: 2 weeks (update frequency)
 ! Homepage: https://github.com/gijsdev/ublock-hide-yt-shorts
@@ -53,3 +53,6 @@ www.youtube.com##ytd-mini-guide-entry-renderer:has(.title:has-text(/^Gaming$/i))
 
 ! Remove "Startseite" button in the sidebar
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Startseite$/i))
+
+! Hide "Startseite" button in expanded sidebar (after clicking the hamburger menu)
+www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Startseite$/i)):upward(div#guide)
