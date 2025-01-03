@@ -57,5 +57,6 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Sta
 ! Hide "Startseite" button in expanded sidebar (after clicking the hamburger menu)
 www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Startseite$/i)):upward(div#guide)
 
-! Hide "Startseite" button in the expanded sidebar (after clicking the hamburger menu) when the sidebar is in mini-guide-visible state
-www.youtube.com##ytd-app[mini-guide-visible] ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Startseite$/i))
+! Hide "Startseite" button when the sidebar is open
+www.youtube.com##tp-yt-app-drawer[opened], 
+www.youtube.com##tp-yt-app-drawer[swipe-open] ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Startseite$/i))
