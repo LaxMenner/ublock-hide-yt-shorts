@@ -59,3 +59,13 @@ www.youtube.com##ytd-guide-entry-renderer:has(yt-formatted-string:has-text(/^Sta
 
 ! Hide "Startseite" button if aria-pressed="false" on the guide button
 www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(#endpoint)
+
+! Hide "Reels" button if aria-pressed="false" on the guide button
+www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(yt-formatted-string:has-text(/^Reels$/i))
+
+! Hide "Trends" button if aria-pressed="false" on the guide button
+www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(yt-formatted-string:has-text(/^Trends$/i))
+
+! Hide "Gaming" button if aria-pressed="false" on the guide button
+www.youtube.com##yt-icon-button[aria-pressed="false"]:upward(ytd-mini-guide-entry-renderer):has(yt-formatted-string:has-text(/^Gaming$/i))
+
